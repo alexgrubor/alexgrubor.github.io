@@ -4,14 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Personal Portfolio">
+    <meta name="keywords" content="HTML, CSS, JavaScript, Portfolio, Services">
     <title>Aleksndra Grubor</title>
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="img/icons8-girl-16.png" type="image/x-icon">
-    <meta name="description" content="Personal Portfolio">
-    <meta name="keywords" content="HTML, CSS, JavaScript, Portfolio, Services">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
+  <!-- /* This is nav section */ -->
     <nav>
         <div class="logo">
            <img src="img/Elegant Monogram Logo Minimalist Schwarz.png" alt="" srcset="">
@@ -24,6 +25,8 @@
         <a href="#contact">Contact</a>
        </div>
     </nav>
+    <!-- /*here end nav section */
+    /*here starts welcome page/hero section */ -->
     <div class="hero">
         <h1>Hi, I am <span class="name">Aleksandra</span></h1>
         <p>Full Stack Web Developer and Graphic Design</p>
@@ -41,13 +44,11 @@
         <p>So, if you are looking for someone to help your web development, I would like you to content me, because I am open to new Freelancing projects</p>
        <a href="#projects" target="_blank" rel="noopener noreferrer"> See my work</a>
     </div>
-    </section>
-    <section class="cube_animation">
-        
-    </section>
+    </section>    
+    <!-- /******************************/ -->
     <section class="graf">
-    <h2>Two sides of me</h2>
-    <div class="graphicon">
+      <h2>Two sides of me</h2>
+       <div class="graphicon">
         <div class="left-text">
             <ul>
                 <h3>Web Developer</h3>
@@ -71,8 +72,10 @@
                 <li>Social Media Graphics</li>
             </ul>
         </div>
-    </div>
-</section>
+      </div>
+  </section>
+<!-- /**************************************************************************************************************************/
+/* here starts fun fact section */ -->
     <section class="fun-fact">
         <img src="img\doyouknow.png" loading="lazy" alt="" srcset="">
         <div class="facts-content">
@@ -85,6 +88,8 @@
        <p> I love animations (not good for UX, so I didn't have a lot of them here)</p>
       </div>    
     </section>
+<!-- /********************************************************************************************************************************/  
+     /* here starts skill section -->
     <section class="skills" id="skills">
       <h2>My Skill Sets</h2>
       <div class="skill-content">
@@ -128,6 +133,8 @@
         </div>
       </div>
     </section>
+    <!-- /********************************************************************************/
+    /* here starts my we section */ -->
     <section class="my-web">
         <h2>My Web applications are</h2>
         <div class="my-web-content">
@@ -153,6 +160,8 @@
             </div>
         </div>
     </section>
+    <!-- /********************************************************************************/
+    /* here starts projects section */ -->
     <section class="projects" id="projects">
         <h2>Projects</h2>
         <div class="project-content">
@@ -161,7 +170,7 @@
             </div>
             <div class="project-text">
                 <h3>Book Blog</h3>
-                <p> Simple book blog made with Bootstrap.</p>
+                <p> This is a simple Book related blog made with Bootstrap5. I have created a website using components and customized it accordingly my needs. The website has login/signup page, edit profile page and add post page because I tried to replicate a blog page as much as possible. This blog is responsive, meaning it will adjust according to the device screen size</p>
                 <div class="project-btn">
                     <a href="http://" target="_blank" rel="noopener noreferrer">Live Demo</a>
                     <a href="https://github.com/alexgrubor/bookblog" target="_blank" rel="noopener noreferrer">View Code</a>
@@ -172,23 +181,24 @@
           
             <div class="project-text">
                 <h3>The Fancy Clothes</h3>
-                <p> Simple clothing store made with Tailwind CSS</p>
+                <p> This e-commerce web site created in Tailwind is clean and straightforward. The home page features a large hero image with a call to action, and the product pages are well organized and easy to navigate. Overall, this is a well-designed site that is easy to use and would be a great choice for anyone looking to create an online store.
+                </p>
                 <div class="project-btn">
                     <a href="http://" target="_blank" rel="noopener noreferrer">Live Demo</a>
                     <a href="https://github.com/alexgrubor/TheFancyClothers" target="_blank" rel="noopener noreferrer">View Code</a>
                 </div>
             </div>
             <div class="project-photo">
-                <img src="img\fancy.png"loading="lazy" alt="" srcset="">
+                <img src="img\fancy.png" loading="lazy" alt="" srcset="">
             </div>
         </div>
         <div class="project-content">
           <div class="project-photo">
-              <img src="img\monopoly.jpg"loading="lazy" alt="" srcset="">
+              <img src="img\monopoly.jpg" loading="lazy" alt="" srcset="">
           </div>
           <div class="project-text">
               <h3>Monopoly Board Game</h3>
-              <p> Interesting board made only with CSS Grid.</p>
+              <p> This is a simple monopoly board made with CSS grid. It's a responsive grid, so it will resize to fit different screen sizes.</p>
               <div class="project-btn">
                   <a href="http://" target="_blank" rel="noopener noreferrer">Live Demo</a>
                   <a href="https://github.com/alexgrubor/bookblog" target="_blank" rel="noopener noreferrer">View Code</a>
@@ -212,20 +222,34 @@
     </div>
     <div class="project-content">
       <div class="project-photo">
-          <img src="img\RealtimeEssen.png"loading="lazy" alt="" srcset="">
+          <img src="img\RealtimeEssen.png" loading="lazy" alt="" srcset="">
       </div>
       <div class="project-text">
           <h3>Real Time in Essen</h3>
-          <p> Welcome page to Essen (city I am currently living in). Made using HTML, CSS and JavaScript.</p>
+          <p> This website was created using HTML, CSS, and JavaScript, and it features a live time display and a rain effect (because the weather in Essen is almost always like that...)</p>
           <div class="project-btn">
               <a href="https://resonant-halva-37b741.netlify.app/" target="_blank" rel="noopener noreferrer">Live Demo</a>
               <a href="https://github.com/alexgrubor/Essen" target="_blank" rel="noopener noreferrer">View Code</a>
           </div>
-      </div>
+        </div>
   </div>
-    </section>
-
-    
+  <div class="project-content">
+          
+    <div class="project-text">
+        <h3>The Marketing Agency Welcome page</h3>
+        <p> Simple Marketing Agency welcome page made with SASS</p>
+        <div class="project-btn">
+            <a href="http://" target="_blank" rel="noopener noreferrer">Live Demo</a>
+            <a href="https://github.com/alexgrubor/Marketingagencysass" target="_blank" rel="noopener noreferrer">View Code</a>
+        </div>
+    </div>
+    <div class="project-photo">
+        <img src="img/MarketingAgency.png" loading="lazy" alt="" srcset="">
+    </div>
+  </div>
+  </section>
+<!-- /************************************************************************************************/
+/* here start the graphic section */ -->
     <section class="graphic-design">
       <div class="container">
         <div class="card">
@@ -239,7 +263,7 @@
         </div>
         <div class="card">
           <div class="imgbx">
-            <img src="img\briana.png"loading="lazy">
+            <img src="img\briana.png" loading="lazy"> 
             <h3>Business Card</h3>
           </div>
           <div class="content">
@@ -257,6 +281,8 @@
         </div>
       </div>
     </section>
+    <!-- /************************************************************************************************/
+    /* here starts mobile version of the graphic section */ -->
     <section class="graphic-mobile-version">
       <div class="mobile-card">
         <div class="mobile-card-photo">
@@ -284,6 +310,8 @@
             </div>
       </div>
     </section>
+    <!-- /************************************************************************************************/
+    /* here starts faq section*/ -->
     <section class="faqs">
         <h2>Frequently Asked Questions</h2>
         <div class="faq-container">
@@ -355,6 +383,8 @@
             </div>
           </div>
     </section>
+    <!-- /********************************************************************************/
+    /* here starts Contact section */ -->
   <section class="contact" id="contact">
         <h2>Get In Touch</h2>
         <i class="fa-solid fa-arrow-down fa-2x"></i>
@@ -364,11 +394,12 @@
           <a href="https://www.dropbox.com/s/4zeox9bk4iz26vt/AleksandraCV.pdf?dl=0" target="_blank" rel="noopener noreferrer">See My Full Resume</a>
         </div>
   </section>
-
+<!-- /************************************************************************************************/
+/* here starts footer */ -->
   <footer>
     <div class="social-icons">
       <a href="https://www.facebook.com/agrubor" target="_blank">  <i class="fa-brands fa-facebook"></i></a>
-      <a href="https://twitter.com/aleksandragrubo"target="_blank">  <i class="fa-brands fa-twitter"></i></a>
+      <a href="https://twitter.com/aleksandragrubo" target="_blank">  <i class="fa-brands fa-twitter"></i></a>
     <a href="https://www.instagram.com/alexgrubor/" target="_blank" rel="noopener noreferrer">   <i class="fa-brands fa-instagram"></i></a> 
      <a href="https://www.linkedin.com/in/aleksandra-grubor-ab131b143/" target="_blank" rel="noopener noreferrer">   <i class="fa-brands fa-linkedin"></i></a>
      <a href="https://github.com/alexgrubor" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i></a>
@@ -377,7 +408,8 @@
     <p>Made  by Aleksandra with <span> &#10084; </span> </p>
 </footer>
 
-
+<!-- /* ********************************************************************************************************************************/ -->
     <script src="main.js"></script>
 </body>
+<!-- /* Copyright (c) 2022 Aleksandra */ -->
 </html>

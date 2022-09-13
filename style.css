@@ -27,6 +27,22 @@ body {
 a {
     text-decoration: none;
 }
+/* scroll bar style */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #f6f5e1;
+}
+::-webkit-scrollbar-thumb {
+  background: #fbc4bf;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #FB928E; 
+}
+
+
+/*HERE STARTS NAVIGATION*/
 nav {
     display: flex;
     justify-content: space-between;
@@ -42,7 +58,7 @@ nav {
     z-index: 1;
 }
 nav .logo img {
-    height: 100px;
+    height: 140px;
     cursor: pointer;
 }
 nav .logo img:hover {
@@ -50,7 +66,6 @@ nav .logo img:hover {
     filter: drop-shadow( 4px 4px 2px #f6f5e1);
 }
 nav .nav-links a {
-    text-decoration: none;
     margin-left: 1rem;
     display: inline-block;
     color: var(--white);
@@ -62,18 +77,19 @@ nav .nav-links a:hover {
     border-bottom: 2px solid var(--white);
     border-top: 2px solid var(--white);
 }
+/*HERE ENDS NAVIGATION*/
+/*HERE STARTS HERO (WELCOME) SECTIONS*/
 .hero {
     display: flex;
     flex-direction: column;
     justify-content:center;
     align-items:center;
-   height: 90vh;
+    height: 90vh;
     width: 100%;
     background-color: #ffb8bf;
-    opacity: 1;
     background-image:  linear-gradient(30deg, #fb928e 12%, transparent 12.5%, transparent 87%, #fb928e 87.5%, #fb928e), linear-gradient(150deg, #fb928e 12%, transparent 12.5%, transparent 87%, #fb928e 87.5%, #fb928e), linear-gradient(30deg, #fb928e 12%, transparent 12.5%, transparent 87%, #fb928e 87.5%, #fb928e), linear-gradient(150deg, #fb928e 12%, transparent 12.5%, transparent 87%, #fb928e 87.5%, #fb928e), linear-gradient(60deg, #fb928e77 25%, transparent 25.5%, transparent 75%, #fb928e77 75%, #fb928e77), linear-gradient(60deg, #fb928e77 25%, transparent 25.5%, transparent 75%, #fb928e77 75%, #fb928e77);
     background-size: 58px 102px;
-    background-position: 0 0, 0 0, 29px 51px, 29px 51px, 0 0, 29px 51px;
+    background-position: 0 0, 0 0, 29px 51px, 29px 51px, 0 0, 29px 51px; /*this code is pattern from CSS pattern generator*/
     text-align: center;
 }
 .hero h1 {
@@ -107,6 +123,8 @@ nav .nav-links a:hover {
     animation:shadow-drop-bottom .4s cubic-bezier(.25,.46,.45,.94) both;
 
 }
+/* HERE ENDS HERO SECTION*/
+/*HERE STARTS ABOUT ME SECTION*/
 .about {
     background: rgb(255, 184, 191, 0.7);
     display:flex;
@@ -131,11 +149,12 @@ nav .nav-links a:hover {
     padding: 0 1rem;
     background-color: rgb(251, 146, 142, 0.4);
     font-family: var(--main-font);
-    font-size: calc(0.5rem + 1vw);
+    font-size: calc(0.7rem + 1vw);
 }
 .about .about-content p {
     color: var(--white);
     font-family: var(--title-fond);
+    font-size: calc(0.4rem + 1vw);
 }
 .about .about-content p:nth-child(2),
 .about .about-content p:nth-child(4) {
@@ -160,6 +179,8 @@ nav .nav-links a:hover {
     text-align: center;
     font-size: calc(0.5rem + 0.5vw);
 }
+/*HERE ENDS ABOUT ME SECTION */
+/*HERE BEGIN SECTION WITH GRAPH */
 .graf {
     text-align: center;
     background: var(--white);
@@ -195,6 +216,8 @@ nav .nav-links a:hover {
     font-size: calc(0.5rem + 1vw);
     margin: 1rem;
 }
+/*HERE ENDS SECTION WITH GRAPH */
+/*HERE STARTS FUN FACT SECTION */
 .fun-fact {
     display:flex; 
     align-items:center;
@@ -226,6 +249,8 @@ nav .nav-links a:hover {
     font-family: var(--main-font);
     color: var(--white);
 }
+/*HERE ENDS FUN FACT SECTION*/
+/*HERE STARTS SKILLS SECTION*/
 .skills {
     text-align: center;
     background: rgb(255, 184, 191, 0.7);
@@ -257,6 +282,10 @@ nav .nav-links a:hover {
     margin-left: 1rem;
     max-width: 33%;
 }
+.skill-content .web-dev-skill {
+  margin: 0;
+}
+
 .skill-links {
     padding: 2rem 0.5rem;
 }
@@ -269,6 +298,8 @@ nav .nav-links a:hover {
     margin-top: 1rem;
     display: inline-block;
 }
+/*HERE ENDS SKILLS SECTION */
+/*HERE STARTS MY WEB SECTION */
 .my-web {
     text-align: center;
     padding: 1rem 2rem;
@@ -327,8 +358,9 @@ nav .nav-links a:hover {
   height: calc(100% - 12px);
   background: white;
   border-radius: 5px;
-
 }
+/*HERE ENDS MY WEB SECTION */
+/* HERE STARTS PROJECTS SECTION */
 .projects {
     text-align: center;
     background-color: var(--dark-pink);
@@ -342,11 +374,42 @@ nav .nav-links a:hover {
     padding: 2rem;
 }
 .project-content img {
-    height:55vh;
-    width: 25vw;
+    max-height:55vh;
+    max-width: 25vw;
     display:block;
-    object-fit: fill;
+ 
 }
+.project-text {
+  display: flex;
+  flex-direction: column;
+  gap:3rem;
+}
+.project-text h3 {
+  font-family: var(--main-font);
+  font-size: calc(0.5rem + 1vw);
+}
+.project-text p { 
+  max-width:90ch;
+}
+.project-btn a {
+  display: inline-block;
+  font-family: var(--main-font);
+  text-shadow: 3px 2px 3px rgba(255,255,255,.2);
+  color: var(--white);
+  padding: 0.5rem 2rem;
+  border-radius: 40px;
+  background: #FB928E;
+  background: linear-gradient(135deg, #FB928E 0%, #FB9AAC 100%);
+  text-align: center;
+  font-size: calc(0.5rem + 1vw);
+  border: 2px solid var(--white);
+  margin-bottom: 1rem;
+}
+.project-btn a:hover {
+  transform: scale(1.3);
+}
+/*HERE ENDS PROJECTS SECTION */
+/*HERE STARTS graphic design SECTION */
 .graphic-design {
   height: 90vh;
   display: flex;
@@ -477,6 +540,8 @@ nav .nav-links a:hover {
 .graphic-mobile-version {
   display: none;
 }
+/*HERE ENDS GRAPHIC SECTION */
+/*HERE STARTS FAQ SECTION*/
 .projects h2,
 .faqs h2 {
     font-family: var(--main-font);
@@ -488,31 +553,7 @@ nav .nav-links a:hover {
     padding-top: 1rem;
     text-align: center;
 }
-.project-text {
-    display: flex;
-    flex-direction: column;
-    gap:3rem;
-}
-.project-text h3 {
-    font-family: var(--main-font);
-    font-size: calc(0.5rem + 1vw);
-}
-.project-btn a {
-    display: inline-block;
-    font-family: var(--main-font);
-    text-shadow: 3px 2px 3px rgba(255,255,255,.2);
-    color: var(--white);
-    padding: 0.5rem 2rem;
-    border-radius: 40px;
-    background: #FB928E;
-    background: linear-gradient(135deg, #FB928E 0%, #FB9AAC 100%);
-    text-align: center;
-    font-size: calc(0.5rem + 1vw);
-    border: 2px solid var(--white);
-}
-.project-btn a:hover {
-    transform: scale(1.3);
-}
+
 .faqs {
     background: var(--white);
     color: var(--dark-pink);
@@ -610,6 +651,8 @@ nav .nav-links a:hover {
   .faq.active .faq-toggle {
     background-color: var(--dark-pink);
   }
+  /*HERE ENDS FAQ SECTION */
+  /*HERE STARTS CONTACT SECTION */
 
  .contact {
     background-color: rgb(255, 184, 191, 0.5);
@@ -652,6 +695,8 @@ nav .nav-links a:hover {
     background: var(--peachy);
     padding: 0.5rem 0.5rem 0.5rem;
  }
+ /*HERE ENDS CONTACT SECTION */
+ /*HERE STARTS FOOTER SECTION */
 
  footer {
     background-color: var(--dark-pink);
@@ -680,7 +725,7 @@ nav .nav-links a:hover {
   footer a i {
     margin-right: 0.5rem;
   }
-
+/*HERE ENDS FOOTER SECTION */
 
 /** Keyframes **/
 @keyframes fadeInUp {
@@ -704,7 +749,7 @@ nav .nav-links a:hover {
 }
  
     /** Media queries */
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 762px) /*MOBILE Media*/{
     nav {
         width: 100%;
         padding:1.9rem 0.5rem;
@@ -722,6 +767,7 @@ nav .nav-links a:hover {
   }
   .about .about-content a {
     padding: 0.5rem;
+    width: 30ch;
   }
   .fun-fact {
     flex-direction: column;
@@ -732,12 +778,15 @@ nav .nav-links a:hover {
   .project-content {
     flex-direction: column;
   }
-  .project-content img {
+  .project-content .project-photo img {
+    max-height:auto;
+    max-width: 100%;
     width: 100%;
-    height: 100%;
+    height: auto;
   }
   .project-content:nth-child(3),
-  .project-content:nth-child(5) {
+  .project-content:nth-child(5),
+  .project-content:nth-child(7) {
     flex-direction: column-reverse;
   }
  .skill-content {
@@ -748,7 +797,9 @@ nav .nav-links a:hover {
 .skill-content .organization-skill {
     width: 100%;
     max-width: 100%;
+    margin:0;
     margin-bottom: 1rem;
+
 }
 .graphicon{
     flex-direction: column;
@@ -784,3 +835,20 @@ nav .nav-links a:hover {
 }
 }
 
+@media (min-width: 768px) and (max-width: 1086px) /*TABLET MEDIA*/{
+.container {
+  justify-content: center;
+  gap: 3rem;
+}
+  .container .card {
+    width: 20%;
+  }
+   .project-content img {
+   max-width: calc(100% - 30px);
+   height: auto;
+  } 
+  .about .about-content a {
+    padding: 0.5rem;
+    width: 30ch;
+  }
+}
